@@ -132,6 +132,7 @@ theme.loadEditor = function()
 		Visual = { fg = nord.none, bg = nord.nord2_gui },
 		VisualNOS = { fg = nord.none, bg = nord.nord2_gui },
 		WarningMsg = { fg = nord.nord15_gui },
+        Whitespace = { fg = nord.nord0_gui },
 		WildMenu = { fg = nord.nord12_gui, bg = nord.none, style = "bold" },
 		CursorColumn = { fg = nord.none, bg = nord.cursorlinefg },
 		CursorLine = { fg = nord.none, bg = nord.cursorlinefg },
@@ -553,13 +554,13 @@ theme.loadPlugins = function()
 		GitGutterDelete = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
 
 		-- GitSigns
-		GitSignsAdd = { fg = nord.nord10_gui }, -- diff mode: Added line |diff.txt|
+		GitSignsAdd = { fg = nord.nord3_gui }, -- diff mode: Added line |diff.txt|
 		GitSignsAddNr = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
 		GitSignsAddLn = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
-		GitSignsChange = { fg = nord.nord10_gui }, -- diff mode: Changed line |diff.txt|
+		GitSignsChange = { fg = nord.nord3_gui }, -- diff mode: Changed line |diff.txt|
 		GitSignsChangeNr = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
 		GitSignsChangeLn = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
-		GitSignsDelete = { fg = nord.nord10_gui }, -- diff mode: Deleted line |diff.txt|
+		GitSignsDelete = { fg = nord.nord3_gui }, -- diff mode: Deleted line |diff.txt|
 		GitSignsDeleteNr = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
 		GitSignsDeleteLn = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
 		GitSignsCurrentLineBlame = { fg = nord.nord3_gui_bright, style = "bold" },
@@ -571,6 +572,11 @@ theme.loadPlugins = function()
 		TelescopeSelectionCaret = { fg = nord.nord13_gui, style = "bold" },
 		TelescopeSelection = { fg = nord.nord13_gui, style = "bold" },
 		TelescopeMatching = { fg = nord.nord13_gui },
+
+        -- Ale
+        ALEErrorSign = { fg = nord.nord11_gui, style = "bold" },
+        ALEWarningSign = { fg = nord.nord12_gui, style = "bold" },
+        ALEInfoSign = { fg = nord.nord13_gui, style = "bold" },
 
 		-- NvimTree
 		NvimTreeRootFolder = { fg = nord.nord7_gui, style = "bold" },
