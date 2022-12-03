@@ -1,5 +1,5 @@
 
-# NariddhKhean/nord.nvim
+# nariddhkhean/nord.nvim
 
 Neovim theme based off of the [Nord Color Palette](https://www.nordtheme.com/docs/colors-and-palettes).
 
