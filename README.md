@@ -4,7 +4,7 @@
 Neovim theme based off of the [Nord Color Palette](https://www.nordtheme.com/docs/colors-and-palettes).
 
 Nord.nvim is a modern colorscheme written in lua for NeoVim that supports a lot of the new features
-added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter)
+added to NeoVim like built-in LSP and [TreeSitter](https://github.com/nvim-treesitter/nvim-treesitter).
 
 ## ⚡️ Requirements
 
