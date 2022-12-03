@@ -225,10 +225,10 @@ theme.loadEditor = function()
 		editor.DiffDelete = { fg = nord.nord11_gui, bg = nord.nord1_gui } -- diff mode: Deleted line
 		editor.DiffText = { fg = nord.nord15_gui, bg = nord.nord1_gui } -- diff mode: Changed text within a changed line
 	else
-		editor.DiffAdd = { fg = nord.nord14_gui, bg = nord.none, style = "reverse" } -- diff mode: Added line
-		editor.DiffChange = { fg = nord.nord13_gui, bg = nord.none, style = "reverse" } --  diff mode: Changed line
-		editor.DiffDelete = { fg = nord.nord11_gui, bg = nord.none, style = "reverse" } -- diff mode: Deleted line
-		editor.DiffText = { fg = nord.nord15_gui, bg = nord.none, style = "reverse" } -- diff mode: Changed text within a changed line
+		editor.DiffAdd = { fg = nord.nord14_gui, bg = nord.none } -- diff mode: Added line
+		editor.DiffChange = { fg = nord.nord13_gui, bg = nord.none } --  diff mode: Changed line
+		editor.DiffDelete = { fg = nord.nord11_gui, bg = nord.none } -- diff mode: Deleted line
+		editor.DiffText = { fg = nord.nord15_gui, bg = nord.none } -- diff mode: Changed text within a changed line
 	end
 
 	return editor
@@ -565,12 +565,12 @@ theme.loadPlugins = function()
 		GitSignsCurrentLineBlame = { fg = nord.nord3_gui_bright, style = "bold" },
 
 		-- Telescope
-		TelescopePromptBorder = { fg = nord.nord8_gui },
+		TelescopePromptBorder = { fg = nord.nord9_gui },
 		TelescopeResultsBorder = { fg = nord.nord9_gui },
-		TelescopePreviewBorder = { fg = nord.nord14_gui },
-		TelescopeSelectionCaret = { fg = nord.nord9_gui },
-		TelescopeSelection = { fg = nord.nord9_gui },
-		TelescopeMatching = { fg = nord.nord8_gui },
+		TelescopePreviewBorder = { fg = nord.nord9_gui },
+		TelescopeSelectionCaret = { fg = nord.nord13_gui, style = "bold" },
+		TelescopeSelection = { fg = nord.nord13_gui, style = "bold" },
+		TelescopeMatching = { fg = nord.nord13_gui },
 
 		-- NvimTree
 		NvimTreeRootFolder = { fg = nord.nord7_gui, style = "bold" },
