@@ -10,9 +10,9 @@ theme.loadSyntax = function()
 		Structure = { fg = nord.nord9_gui }, -- struct, union, enum, etc.
 		Constant = { fg = nord.nord4_gui }, -- any constant
 		Character = { fg = nord.nord14_gui }, -- any character constant: 'c', '\n'
-		Number = { fg = nord.nord15_gui }, -- a number constant: 5
-		Boolean = { fg = nord.nord9_gui }, -- a boolean constant: TRUE, false
-		Float = { fg = nord.nord15_gui }, -- a floating point constant: 2.3e10
+		Number = { fg = nord.nord14_gui }, -- a number constant: 5
+		Boolean = { fg = nord.nord14_gui }, -- a boolean constant: TRUE, false
+		Float = { fg = nord.nord14_gui }, -- a floating point constant: 2.3e10
 		Statement = { fg = nord.nord9_gui }, -- any statement
 		Label = { fg = nord.nord9_gui }, -- case, default, etc.
 		Operator = { fg = nord.nord9_gui }, -- sizeof", "+", "*", etc.
@@ -100,7 +100,9 @@ theme.loadEditor = function()
 		Folded = { fg = nord.nord3_gui_bright, bg = nord.none, style = "italic" },
 		FoldColumn = { fg = nord.nord7_gui },
 		IncSearch = { fg = nord.nord6_gui, bg = nord.nord10_gui },
-		LineNr = { fg = nord.nord3_gui_bright },
+		LineNr = { fg = nord.nord4_gui, style = "bold" },
+		LineNrAbove = { fg = nord.nord3_gui},
+		LineNrBelow = { fg = nord.nord3_gui},
 		CursorLineNr = { fg = nord.nord4_gui },
 		MatchParen = { fg = nord.nord15_gui, bg = nord.none, style = "bold" },
 		ModeMsg = { fg = nord.nord4_gui },
@@ -257,16 +259,16 @@ theme.loadTreeSitter = function()
 	local treesitter = {
 		TSConstructor = { fg = nord.nord9_gui }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
 		TSConstant = { fg = nord.nord13_gui }, -- For constants
-		TSFloat = { fg = nord.nord15_gui }, -- For floats
-		TSNumber = { fg = nord.nord15_gui }, -- For all number
+		TSFloat = { fg = nord.nord14_gui }, -- For floats
+		TSNumber = { fg = nord.nord14_gui }, -- For all number
 		TSAttribute = { fg = nord.nord15_gui }, -- (unstable) TODO: docs
 		TSError = { fg = nord.nord11_gui }, -- For syntax/parser errors.
-		TSException = { fg = nord.nord15_gui }, -- For exception related keywords.
+		TSException = { fg = nord.nord13_gui }, -- For exception related keywords.
 		TSFuncMacro = { fg = nord.nord7_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
 		TSInclude = { fg = nord.nord9_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = nord.nord15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
-		TSOperator = { fg = nord.nord9_gui }, -- For any operator: `+`, but also `->` and `*` in C.
-		TSParameter = { fg = nord.nord10_gui }, -- For parameters of a function.
+		TSOperator = { fg = nord.nord13_gui }, -- For any operator: `+`, but also `->` and `*` in C.
+		TSParameter = { fg = nord.nord15_gui }, -- For parameters of a function.
 		TSParameterReference = { fg = nord.nord10_gui }, -- For references to parameters of a function.
 		TSPunctDelimiter = { fg = nord.nord8_gui }, -- For delimiters ie: `.`
 		TSPunctBracket = { fg = nord.nord8_gui }, -- For brackets and parens.
@@ -285,16 +287,16 @@ theme.loadTreeSitter = function()
 		TSAnnotation = { fg = nord.nord11_gui }, -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
 		["@constructor"] = { fg = nord.nord9_gui },
 		["@constant"] = { fg = nord.nord13_gui },
-		["@float"] = { fg = nord.nord15_gui },
-		["@number"] = { fg = nord.nord15_gui },
+		["@float"] = { fg = nord.nord14_gui },
+		["@number"] = { fg = nord.nord14gui },
 		["@attribute"] = { fg = nord.nord15_gui },
 		["@error"] = { fg = nord.nord11_gui },
-		["@exception"] = { fg = nord.nord15_gui },
+		["@exception"] = { fg = nord.nord13_gui },
 		["@funtion.macro"] = { fg = nord.nord7_gui },
 		["@include"] = { fg = nord.nord9_gui },
 		["@label"] = { fg = nord.nord15_gui },
-		["@operator"] = { fg = nord.nord9_gui },
-		["@parameter"] = { fg = nord.nord10_gui },
+		["@operator"] = { fg = nord.nord13_gui },
+		["@parameter"] = { fg = nord.nord15_gui },
 		["@punctuation.delimiter"] = { fg = nord.nord8_gui },
 		["@punctuation.bracket"] = { fg = nord.nord8_gui },
 		["@punctuation.special"] = { fg = nord.nord8_gui },
@@ -335,7 +337,7 @@ theme.loadTreeSitter = function()
 		treesitter["@variable"] = { fg = nord.nord4_gui }
 		treesitter["@variable.builtin"] = { fg = nord.nord4_gui }
 		treesitter["@variable.global"] = { fg = nord.nord4_gui }
-		treesitter["@boolean"] = { fg = nord.nord9_gui }
+		treesitter["@boolean"] = { fg = nord.nord14_gui }
 		treesitter["@constant.builtin"] = { fg = nord.nord7_gui }
 		treesitter["@constant.macro"] = { fg = nord.nord7_gui }
 		treesitter["@text.title"] = { fg = nord.nord10_gui, bg = nord.none }
@@ -350,7 +352,7 @@ theme.loadTreeSitter = function()
 		treesitter["@variable"] = { fg = nord.nord4_gui, style = "bold" }
 		treesitter["@variable.builtin"] = { fg = nord.nord4_gui, style = "bold" }
 		treesitter["@variable.global"] = { fg = nord.nord4_gui, style = "bold" }
-		treesitter["@boolean"] = { fg = nord.nord9_gui, style = "bold" }
+		treesitter["@boolean"] = { fg = nord.nord14_gui, style = "bold" }
 		treesitter["@constant.builtin"] = { fg = nord.nord7_gui, style = "bold" }
 		treesitter["@constant.macro"] = { fg = nord.nord7_gui, style = "bold" }
 		treesitter["@text.title"] = { fg = nord.nord10_gui, bg = nord.none, style = "bold" }
@@ -551,13 +553,13 @@ theme.loadPlugins = function()
 		GitGutterDelete = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
 
 		-- GitSigns
-		GitSignsAdd = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
+		GitSignsAdd = { fg = nord.nord10_gui }, -- diff mode: Added line |diff.txt|
 		GitSignsAddNr = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
 		GitSignsAddLn = { fg = nord.nord14_gui }, -- diff mode: Added line |diff.txt|
-		GitSignsChange = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
+		GitSignsChange = { fg = nord.nord10_gui }, -- diff mode: Changed line |diff.txt|
 		GitSignsChangeNr = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
 		GitSignsChangeLn = { fg = nord.nord15_gui }, -- diff mode: Changed line |diff.txt|
-		GitSignsDelete = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
+		GitSignsDelete = { fg = nord.nord10_gui }, -- diff mode: Deleted line |diff.txt|
 		GitSignsDeleteNr = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
 		GitSignsDeleteLn = { fg = nord.nord11_gui }, -- diff mode: Deleted line |diff.txt|
 		GitSignsCurrentLineBlame = { fg = nord.nord3_gui_bright, style = "bold" },
