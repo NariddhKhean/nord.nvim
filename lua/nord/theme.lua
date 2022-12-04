@@ -265,7 +265,7 @@ theme.loadTreeSitter = function()
 		TSBoolean = { fg = nord.nord14_gui }, -- For booleans.
 		TSAttribute = { fg = nord.nord15_gui }, -- (unstable) TODO: docs
 		TSError = { fg = nord.nord11_gui }, -- For syntax/parser errors.
-		TSException = { fg = nord.nord11_gui }, -- For exception related keywords.
+		TSException = { fg = nord.nord12_gui }, -- For exception related keywords.
 		TSFuncMacro = { fg = nord.nord7_gui }, -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
 		TSInclude = { fg = nord.nord10_gui }, -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
 		TSLabel = { fg = nord.nord15_gui }, -- For labels: `label:` in C and `:label:` in Lua.
@@ -290,10 +290,10 @@ theme.loadTreeSitter = function()
 		["@constant"] = { fg = nord.nord4_gui },
 		["@float"] = { fg = nord.nord14_gui },
 		["@number"] = { fg = nord.nord14_gui },
-        ["@boolean"] = { fg = nord.nord14_gui },
+                ["@boolean"] = { fg = nord.nord14_gui },
 		["@attribute"] = { fg = nord.nord15_gui },
 		["@error"] = { fg = nord.nord11_gui },
-		["@exception"] = { fg = nord.nord11_gui },
+		["@exception"] = { fg = nord.nord12_gui },
 		["@funtion.macro"] = { fg = nord.nord7_gui },
 		["@include"] = { fg = nord.nord10_gui },
 		["@label"] = { fg = nord.nord15_gui },
