@@ -34,31 +34,37 @@ theme.loadSyntax = function()
 		Todo = { fg = nord.nord13_gui, bg = nord.none, style = "bold,italic" }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 		Conceal = { fg = nord.none, bg = nord.nord0_gui },
 		htmlLink = { fg = nord.nord14_gui, style = "underline" },
-		markdownH1Delimiter = { fg = nord.nord8_gui },
-		markdownH2Delimiter = { fg = nord.nord11_gui },
-		markdownH3Delimiter = { fg = nord.nord14_gui },
+		markdownH1Delimiter = { fg = nord.nord10_gui },
+		markdownH2Delimiter = { fg = nord.nord9_gui },
+		markdownH3Delimiter = { fg = nord.nord8_gui },
+		markdownH4Delimiter = { fg = nord.nord7_gui },
+		markdownH5Delimiter = { fg = nord.nord7_gui },
 	}
 
   -- Bold highlights --
   if vim.g.nord_bold == false then
-		syntax.htmlH1 = { fg = nord.nord8_gui }
-		syntax.htmlH2 = { fg = nord.nord11_gui }
-		syntax.htmlH3 = { fg = nord.nord14_gui }
-		syntax.htmlH4 = { fg = nord.nord15_gui }
-		syntax.htmlH5 = { fg = nord.nord9_gui }
-		syntax.markdownH1 = { fg = nord.nord8_gui }
-		syntax.markdownH2 = { fg = nord.nord11_gui }
-		syntax.markdownH3 = { fg = nord.nord14_gui }
+		syntax.htmlH1 = { fg = nord.nord10_gui }
+		syntax.htmlH2 = { fg = nord.nord9_gui }
+		syntax.htmlH3 = { fg = nord.nord8_gui }
+		syntax.htmlH4 = { fg = nord.nord7_gui }
+		syntax.htmlH5 = { fg = nord.nord7_gui }
+		syntax.markdownH1 = { fg = nord.nord10_gui }
+		syntax.markdownH2 = { fg = nord.nord9_gui }
+		syntax.markdownH3 = { fg = nord.nord8_gui }
+		syntax.markdownH4 = { fg = nord.nord7_gui }
+		syntax.markdownH5 = { fg = nord.nord7_gui }
 		syntax.Error = { fg = nord.nord11_gui, bg = nord.none, style = "underline" } -- any erroneous construct without bold
   else
-		syntax.htmlH1 = { fg = nord.nord8_gui, style = "bold" }
-		syntax.htmlH2 = { fg = nord.nord11_gui, style = "bold" }
-		syntax.htmlH3 = { fg = nord.nord14_gui, style = "bold" }
-		syntax.htmlH4 = { fg = nord.nord15_gui, style = "bold" }
-		syntax.htmlH5 = { fg = nord.nord9_gui, style = "bold" }
-		syntax.markdownH1 = { fg = nord.nord8_gui, style = "bold" }
-		syntax.markdownH2 = { fg = nord.nord11_gui, style = "bold" }
-		syntax.markdownH3 = { fg = nord.nord14_gui, style = "bold" }
+		syntax.htmlH1 = { fg = nord.nord10_gui, style = "bold" }
+		syntax.htmlH2 = { fg = nord.nord9_gui, style = "bold" }
+		syntax.htmlH3 = { fg = nord.nord8_gui, style = "bold" }
+		syntax.htmlH4 = { fg = nord.nord7_gui, style = "bold" }
+		syntax.htmlH5 = { fg = nord.nord7_gui, style = "bold" }
+		syntax.markdownH1 = { fg = nord.nord10_gui, style = "bold" }
+		syntax.markdownH2 = { fg = nord.nord9_gui, style = "bold" }
+		syntax.markdownH3 = { fg = nord.nord8_gui, style = "bold" }
+		syntax.markdownH4 = { fg = nord.nord7_gui, style = "bold" }
+		syntax.markdownH5 = { fg = nord.nord7_gui, style = "bold" }
 		syntax.Error = { fg = nord.nord11_gui, bg = nord.none, style = "bold,underline" } -- any erroneous construct with bold
   end
 
